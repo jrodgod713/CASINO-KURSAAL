@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/Ruletastyles.css">
+    <title>Ruleta Casino</title>
+</head>
+<body>
+    <header>
+        <h1>Ruleta Casino</h1>
+    </header>
+
+    <main>
+        <div class="roulette-container">
+            <div class="wheel">
+                <div class="ball" id="ball"></div>
+            </div>
+            <div class="table">
+                <div class="numbers" id="numbers">
+                    <div class="row">
+                        <span class="green" data-value="0">0</span>
+                    </div>
+                    <div class="row">
+                        <span class="red" data-value="32">32</span>
+                        <span class="black" data-value="15">15</span>
+                        <span class="red" data-value="19">19</span>
+                        <span class="black" data-value="4">4</span>
+                        <span class="red" data-value="21">21</span>
+                        <span class="black" data-value="2">2</span>
+                        <span class="red" data-value="25">25</span>
+                    </div>
+                    <div class="row">
+                        <span class="black" data-value="26">26</span>
+                        <span class="red" data-value="11">11</span>
+                        <span class="black" data-value="30">30</span>
+                        <span class="red" data-value="8">8</span>
+                        <span class="black" data-value="12">12</span>
+                        <span class="red" data-value="28">28</span>
+                        <span class="black" data-value="9">9</span>
+                    </div>
+                    <div class="row">
+                        <span class="red" data-value="36">36</span>
+                        <span class="black" data-value="13">13</span>
+                        <span class="red" data-value="1">1</span>
+                        <span class="black" data-value="24">24</span>
+                        <span class="red" data-value="23">23</span>
+                        <span class="black" data-value="5">5</span>
+                        <span class="red" data-value="17">17</span>
+                    </div>
+                    <div class="row">
+                        <span class="black" data-value="34">34</span>
+                        <span class="red" data-value="6">6</span>
+                        <span class="black" data-value="27">27</span>
+                        <span class="red" data-value="10">10</span>
+                        <span class="black" data-value="23">23</span>
+                        <span class="red" data-value="30">30</span>
+                        <span class="black" data-value="16">16</span>
+                    </div>
+                </div>
+                <div class="bets">
+                    <h3>Apuestas</h3>
+                    <button id="betButton">Apostar</button>
+                    <div id="selectedBet" class="selected-bet">Selecciona una apuesta</div>
+                </div>
+                <div id="result" class="result"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LOCOWIN Kursaal. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script/Ruleta.js"></script>
+</body>
+</html>

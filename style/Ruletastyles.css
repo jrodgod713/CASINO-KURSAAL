@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #004d00;
+    color: #fff;
+}
+
+header {
+    background-color: #c5a05a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.roulette-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.wheel {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #c5a05a;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff; /* Color de fondo para la ruleta */
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.table {
+    margin-left: 20px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.red, .black {
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.red {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.black {
+    background-color: #333;
+    color: white;
+}
+
+.red:hover, .black:hover {
+    transform: scale(1.1);
+    background-color: #e60000; /* Color más intenso al pasar el mouse */
+}
+
+.bets {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #c5a05a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a67c4e;
+}
+
+.selected-bet {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #c5a05a;
+    padding: 10px 0;
+    text-align: center;
+}
+.green {
+    background-color: #8CCB3E; /* Color verde para el 0 */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
